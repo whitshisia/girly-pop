@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": "understanding-cycle",
+      "title": "Understanding Your Menstrual Cycle",
+      "excerpt": "Learn about the four phases of your cycle and what to expect in each.",
+      "content": "Your menstrual cycle is more than just your period...",
+      "category": "education",
+      "readTime": 5,
+      "emoji": "📚",
+      "isNew": false
+    },
+    {
+      "id": "fertility-awareness",
+      "title": "Fertility Awareness Methods",
+      "excerpt": "How to track your fertile window naturally.",
+      "content": "Fertility awareness involves tracking biological signs...",
+      "category": "fertility",
+      "readTime": 7,
+      "emoji": "🌱",
+      "isNew": true
+    },
+    {
+      "id": "pms-management",
+      "title": "Managing PMS Symptoms",
+      "excerpt": "Natural ways to ease premenstrual symptoms.",
+      "content": "Premenstrual syndrome affects many women...",
+      "category": "symptoms",
+      "readTime": 4,
+      "emoji": "💆‍♀️",
+      "isNew": false
+    }
+  ]
+}

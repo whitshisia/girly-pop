@@ -1,0 +1,118 @@
+{
+  "symptoms": [
+    {
+      "id": "cramps",
+      "name": "Cramps",
+      "emoji": "🩸",
+      "category": "pain",
+      "popular": true
+    },
+    {
+      "id": "headache",
+      "name": "Headache",
+      "emoji": "🤕",
+      "category": "pain",
+      "popular": true
+    },
+    {
+      "id": "back-pain",
+      "name": "Back Pain",
+      "emoji": "🔙",
+      "category": "pain",
+      "popular": true
+    },
+    {
+      "id": "breast-tenderness",
+      "name": "Breast Tenderness",
+      "emoji": "👙",
+      "category": "physical",
+      "popular": true
+    },
+    {
+      "id": "bloating",
+      "name": "Bloating",
+      "emoji": "🎈",
+      "category": "digestive",
+      "popular": true
+    },
+    {
+      "id": "acne",
+      "name": "Acne",
+      "emoji": "🔴",
+      "category": "skin",
+      "popular": true
+    },
+    {
+      "id": "fatigue",
+      "name": "Fatigue",
+      "emoji": "😴",
+      "category": "general",
+      "popular": true
+    },
+    {
+      "id": "nausea",
+      "name": "Nausea",
+      "emoji": "🤢",
+      "category": "digestive",
+      "popular": true
+    },
+    {
+      "id": "mood-swings",
+      "name": "Mood Swings",
+      "emoji": "🎭",
+      "category": "emotional",
+      "popular": true
+    },
+    {
+      "id": "anxiety",
+      "name": "Anxiety",
+      "emoji": "😰",
+      "category": "emotional",
+      "popular": true
+    },
+    {
+      "id": "food-cravings",
+      "name": "Food Cravings",
+      "emoji": "🍫",
+      "category": "emotional",
+      "popular": true
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "emoji": "🌙",
+      "category": "sleep",
+      "popular": true
+    },
+    {
+      "id": "constipation",
+      "name": "Constipation",
+      "emoji": "🔶",
+      "category": "digestive"
+    },
+    {
+      "id": "diarrhea",
+      "name": "Diarrhea",
+      "emoji": "💩",
+      "category": "digestive"
+    },
+    {
+      "id": "dizziness",
+      "name": "Dizziness",
+      "emoji": "💫",
+      "category": "general"
+    },
+    {
+      "id": "hot-flashes",
+      "name": "Hot Flashes",
+      "emoji": "🔥",
+      "category": "physical"
+    },
+    {
+      "id": "cold-sweats",
+      "name": "Cold Sweats",
+      "emoji": "❄️",
+      "category": "physical"
+    }
+  ]
+}

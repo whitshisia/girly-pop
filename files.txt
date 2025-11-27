@@ -58,3 +58,82 @@ match /community/categories/{categoryId} {
   allow write: if request.auth != null && 
     get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isAdmin == true;
 }
+
+
+/src
+ ├── app/                   # routes
+ │    ├── index.jsx         # home
+ │    ├── calendar/
+ │    │    └── index.jsx
+ │    ├── log/
+ │    │    └── [date].jsx
+ │    ├── cycle/
+ │    │    ├── insights.jsx
+ │    │    └── history.jsx
+ │    ├── ovulation/
+ │    │    ├── forecast.jsx
+ │    │    ├── bbt-chart.jsx
+ │    │    └── tests.jsx
+ │    ├── pregnancy/
+ │    │    ├── dashboard.jsx
+ │    │    └── week/[week].jsx
+ │    ├── symptoms/
+ │    │    └── index.jsx
+ │    ├── insights/
+ │    │    ├── index.jsx
+ │    │    └── article/[id].jsx
+ │    ├── profile/
+ │    │    ├── index.jsx
+ │    │    ├── cycle-settings.jsx
+ │    │    ├── notifications.jsx
+ │    │    ├── privacy.jsx
+ │    │    ├── data-export.jsx
+ │    │    └── theme.jsx
+ │    ├── community/
+ │    │    └── index.jsx
+ │    ├── partner/
+ │    │    └── index.jsx
+ │    ├── auth/
+ │    │    ├── login.jsx
+ │    │    ├── register.jsx
+ │    │    ├── anonymous.jsx
+ │    │    └── onboarding.jsx
+ │    └── offline.jsx
+ │
+ ├── components/            # reusable UI blocks
+ │    ├── Calendar.jsx
+ │    ├── DayCard.jsx
+ │    ├── SymptomsGrid.jsx
+ │    ├── BBTChart.jsx
+ │    ├── ArticleCard.jsx 1
+ │    ├── CycleCard.jsx 2
+ │    ├── PredictionWidget.jsx
+ │    ├── ReminderToggle.jsx
+ │    ├── Navbar.jsx
+ │    └── Layout.jsx
+ │
+ ├── hooks/
+ │    ├── useCyclePredictor.js
+ │    ├── useIndexedDB.js
+ │    ├── useAuth.js
+ │    ├── useSync.js
+ │    └── useNotifications.js
+ │
+ ├── lib/
+ │    ├── db.js               # IndexedDB setup 3
+ │    ├── supabase.js         # optional backend
+ │    ├── firebase.js         # optional backend
+ │    └── predictions.js
+ │
+ ├── data/
+ │    ├── symptoms.json       # 80+ Flo symptoms
+ │    ├── articles.json       # health guides
+ │    └── pregnancy-weeks.json
+ │
+ ├── styles/
+ │    └── globals.css
+ │
+ ├── service-worker.js        # caching + push notifications
+ ├── manifest.json            # PWA manifest 4
+ ├── main.jsx                 # root entry
+ └── index.html               # root HTML

@@ -1,0 +1,25 @@
+{
+  "name": "CycleTracker - Period & Ovulation",
+  "short_name": "CycleTracker",
+  "description": "Track your menstrual cycle, ovulation, and pregnancy journey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "fitness", "medical"],
+  "lang": "en",
+  "scope": "/"
+}
