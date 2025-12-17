@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import pregnancyWeeks from '../../../../data/pregnancy-weeks.json';
+import pregnancyWeeks from '../../../data/pregnancy-weeks.json';
 
 export default function PregnancyWeek() {
   const { week } = useParams();

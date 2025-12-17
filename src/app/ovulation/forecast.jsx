@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
-import { useCyclePredictor } from '../../../hooks/useCyclePredictor';
-import { useDailyLogs } from '../../../hooks/useDailyLogs';
+import { useAuth } from '../../hooks/useAuth';
+import { useCyclePredictor } from '../../hooks/useCyclePredictor';
+import { useDailyLogs } from '../../hooks/useDailyLogs';
 import { collection, query, orderBy, limit, onSnapshot } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
+import { db } from '../../lib/firebase';
 
 export default function OvulationForecast() {
   const { user } = useAuth();

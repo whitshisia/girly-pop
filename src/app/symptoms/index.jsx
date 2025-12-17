@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
-import { useDailyLogs } from '../../../hooks/useDailyLogs';
+import { useAuth } from '../../hooks/useAuth';
+import { useDailyLogs } from '../../hooks/useDailyLogs';
 import { doc, updateDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
-import SymptomsGrid from '../../../components/SymptomsGrid';
-import symptomsData from '../../../data/symptoms.json';
+import { db } from '../../lib/firebase';
+import SymptomsGrid from '../../components/SymptomsGrid';
+import symptomsData from '../../data/symptoms.json';
 
 export default function Symptoms() {
   const { user } = useAuth();

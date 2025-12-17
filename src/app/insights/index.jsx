@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
-import { useCyclePredictor } from '../../../hooks/useCyclePredictor';
-import { useDailyLogs } from '../../../hooks/useDailyLogs';
-import ArticleCard from '../../../components/ArticleCard';
-import articlesData from '../../../data/articles.json';
+import { useAuth } from '../../hooks/useAuth';
+import { useCyclePredictor } from '../../hooks/useCyclePredictor';
+import { useDailyLogs } from '../../hooks/useDailyLogs';
+import ArticleCard from '../../components/ArticleCard';
+import articlesData from '../../data/articles.json';
 
 export default function Insights() {
   const { user } = useAuth();

@@ -5,6 +5,7 @@ import PredictionWidget from '../components/PredictionWidget';
 import SymptomsGrid from '../components/SymptomsGrid';
 import DayCard from '../components/DayCard';
 import ArticleCard from '../components/ArticleCard';
+import articlesData from '../data/articles.json'; 
 
 export default function Home() {
   const { user } = useAuth();
@@ -34,13 +35,16 @@ export default function Home() {
     return 'Good evening';
   };
 
+  // Access the articles array from the imported data
+  const articles = articlesData.articles || [];
+
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h1>{getGreeting()}, {user.name}!</h1>
+        <h1>{getGreeting()}, {user.name || 'User'}!</h1> {/* Added fallback for name */}
         <div className="quick-stats">
           {user.goal && <span className="goal-badge">{user.goal}</span>}
-          {user.pregnancyDueDate && (
+          {user.pregnancyDueDate && user.pregnancyStartDate && (
             <span className="pregnancy-badge">
               Week {Math.floor((new Date() - new Date(user.pregnancyStartDate)) / (7 * 24 * 60 * 60 * 1000))}
             </span>
@@ -111,12 +115,21 @@ export default function Home() {
         {/* Health Insights */}
         <section className="dashboard-section">
           <h2>Health Insights</h2>
-          <div className="articles-carousel">
-            {articlesData.slice(0, 3).map(article => (
-              <ArticleCard key={article.id} article={article} />
-            ))}
-          </div>
-          <a href="/insights" className="see-all-articles">View All Articles →</a>
+          {articles.length > 0 ? (
+            <>
+              <div className="articles-carousel">
+                {articles.slice(0, 3).map(article => (
+                  <ArticleCard key={article.id} article={article} />
+                ))}
+              </div>
+              <a href="/insights" className="see-all-articles">View All Articles →</a>
+            </>
+          ) : (
+            <div className="no-articles">
+              <p>No articles available at the moment</p>
+              <a href="/insights" className="explore-insights-btn">Explore Insights</a>
+            </div>
+          )}
         </section>
 
         {/* Community Preview */}

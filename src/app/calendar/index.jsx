@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
-import { useCyclePredictor } from '../../../hooks/useCyclePredictor';
-import { useDailyLogs } from '../../../hooks/useDailyLogs';
-import DayCard from '../../../components/DayCard';
+import { useAuth } from '../../hooks/useAuth';
+import { useCyclePredictor } from '../../hooks/useCyclePredictor';
+import { useDailyLogs } from '../../hooks/useDailyLogs';
+import DayCard from '../../components/DayCard';
 
 export default function Calendar() {
   const { user } = useAuth();

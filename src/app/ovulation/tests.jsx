@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { collection, addDoc, query, orderBy, onSnapshot } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
+import { db } from '../../lib/firebase';
 import { format } from 'date-fns';
 
 export default function OvulationTests() {

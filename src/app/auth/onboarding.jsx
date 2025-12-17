@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { doc, setDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
+import { db } from '../../lib/firebase';
 
 const GOALS = [
   { id: 'tracking', label: 'Cycle Tracking', description: 'Track periods and symptoms', emoji: '📅' },

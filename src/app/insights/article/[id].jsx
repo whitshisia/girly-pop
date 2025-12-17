@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../../hooks/useAuth';
+import { useAuth } from '../../../hooks/useAuth';
 import { doc, updateDoc, arrayUnion } from 'firebase/firestore';
-import { db } from '../../../../lib/firebase';
-import articlesData from '../../../../data/articles.json';
+import { db } from '../../../lib/firebase';
+import articlesData from '../../../data/articles.json';
 
 export default function ArticlePage() {
   const { id } = useParams();

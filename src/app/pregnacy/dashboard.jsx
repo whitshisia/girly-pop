@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
-import pregnancyWeeks from '../../../data/pregnancy-weeks.json';
+import { db } from '../../lib/firebase';
+import pregnancyWeeks from '../../data/pregnancy-weeks.json';
 
 export default function PregnancyDashboard() {
   const { user } = useAuth();

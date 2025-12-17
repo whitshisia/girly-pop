@@ -1,6 +1,6 @@
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
+import { db } from '../../lib/firebase';
 import { useState, useEffect } from 'react';
 
 export default function Profile() {

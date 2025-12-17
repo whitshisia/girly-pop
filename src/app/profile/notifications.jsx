@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { doc, updateDoc, getDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
-import ReminderToggle from '../../../components/ReminderToggle';
+import { db } from '../../lib/firebase';
+import ReminderToggle from '../../components/ReminderToggle';
 
 export default function Notifications() {
   const { user } = useAuth();

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../../../hooks/useAuth';
-import { useDailyLogs } from '../../../hooks/useDailyLogs';
+import { useAuth } from '../../hooks/useAuth';
+import { useDailyLogs } from '../../hooks/useDailyLogs';
 import { doc, updateDoc } from 'firebase/firestore';
-import { db } from '../../../lib/firebase';
-import BBTChart from '../../../components/BBTChart';
+import { db } from '../../lib/firebase';
+import BBTChart from '../../components/BBTChart';
 
 export default function BBTChartPage() {
   const { user } = useAuth();
